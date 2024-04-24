@@ -1,2 +1,2 @@
-# dune-analytics
-Dune Analytics
+# Dune Analytics for Index Coop
+
