@@ -1,0 +1,25 @@
+WITH
+
+token(address, symbol, composite, leverage, category, end_date) AS (
+--category setprotocol_v2,  indexprotocol
+VALUES
+(0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b, 'DPI',       TRUE,    FALSE,    'setprotocol_v2',  null          ),
+(0x72e364f2abdc788b7e918bc238b21f109cd634d7, 'MVI',       TRUE,    FALSE,    'setprotocol_v2',  null          ),
+(0x2af1df3ab0ab157e1e2ad8f88a7d04fbea0c7dc6, 'BED',       TRUE,    FALSE,    'setprotocol_v2',  null          ),
+(0x33d63ba1e57e54779f7ddaeaa7109349344cf5f1, 'DATA',      TRUE,    FALSE,    'setprotocol_v2',  '2022-10-27'  ),
+(0xaa6e8127831c9de45ae56bb1b0d4d4da6e5665bd, 'ETH2x-FLI', FALSE,   TRUE,     'setprotocol_v2',  '2024-03-18'  ),
+(0x0b498ff89709d3838a063f1dfa463091f9801c2b, 'BTC2x-FLI', FALSE,   TRUE,     'setprotocol_v2',  '2024-03-18'  ),
+(0x47110d43175f7f2c2425e7d15792acc5817eb44f, 'GMI',       TRUE,    FALSE,    'setprotocol_v2',  '2022-10-27'  ),
+(0x7C07F7aBe10CE8e33DC6C5aD68FE033085256A84, 'icETH',     FALSE,   TRUE,     'setprotocol_v2',  null          ),
+(0x02e7ac540409d32c90bfb51114003a9e1ff0249c, 'JPG',       FALSE,   FALSE,    'setprotocol_v2',  '2022-10-31'  ),
+(0x341c05c0E9b33C0E38d64de76516b2Ce970bB3BE, 'dsETH',     FALSE,   FALSE,    'indexprotocol',   null           ),
+(0x36c833Eed0D376f75D1ff9dFDeE260191336065e, 'gtcETH',    FALSE,   FALSE,    'indexprotocol',   null           ), 
+-- (0xcCdAE12162566E3f29fEfA7Bf7F5b24C644493b5, 'icRETH',    FALSE,   TRUE,     'indexprotocol',   null           ),
+(0xc30FBa978743a43E736fc32FBeEd364b8A2039cD, 'icSMMT',    FALSE,   FALSE,    'indexprotocol',   '2023-12-20'   ), 
+(0x1B5E16C5b20Fb5EE87C61fE9Afe735Cca3B21A65, 'ic21',      TRUE,    FALSE,    'indexprotocol',   null           ),
+(0x55b2CFcfe99110C773f00b023560DD9ef6C8A13B, 'cdETI',     TRUE,    FALSE,    'indexprotocol',   null           ),
+(0xD2AC55cA3Bbd2Dd1e9936eC640dCb4b745fDe759, 'BTC2X',     TRUE,    FALSE,    'indexprotocol',   null           ),
+(0x65c4C0517025Ec0843C9146aF266A2C5a2D148A2, 'ETH2X',     TRUE,    FALSE,    'indexprotocol',   null           )
+)
+
+SELECT * FROM token
